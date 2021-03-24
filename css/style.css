@@ -3,7 +3,6 @@
 }
 
 body {
-  /* font-family: 'Raleway', sans-serif; */
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -124,6 +123,10 @@ z-index: 5;
   text-transform: capitalize;
   border-bottom: 1px solid transparent;
   transition: border-color 0.5s;
+  -webkit-transition: border-color 0.5s;
+  -moz-transition: border-color 0.5s;
+  -ms-transition: border-color 0.5s;
+  -o-transition: border-color 0.5s;
 }
 
 .menu__link:hover {
@@ -138,7 +141,6 @@ z-index: 5;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* .header__wrapper minus .header__top*/
   min-height: calc(100vh - 100px);
 }
 
@@ -264,7 +266,6 @@ z-index: 5;
   display: flex;
   flex-direction: column;
   max-width: 346px;
-  /*без указания ширины не растягивается до максимума*/
   width: 100%;
   flex: none;
   margin-right: 254px;
@@ -398,6 +399,10 @@ z-index: 5;
   background-color: rgba(51, 51, 51, 0.7);
   opacity: 0;
   transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
 }
 
 .gallery__img:hover .gallery__hover {
@@ -548,6 +553,10 @@ z-index: 5;
   bottom: 74px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .slick-dots li+li {
@@ -563,6 +572,10 @@ z-index: 5;
   border-radius: 50%;
   outline: transparent;
   padding: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .slick-dots button:hover {
@@ -650,7 +663,6 @@ ul.price__list {
   font-weight: 400;
   line-height: 40px;
   color: #01353e;
-  /* без этого цена не выравнивается как на макете */
   margin-top: auto;
 }
 
@@ -764,7 +776,7 @@ ul.footer__social {
   margin-bottom: 190px;
 }
 
-.footer__social-item+.footer__social-item {
+.footer__social-item + .footer__social-item {
   margin-left: 10px;
 }
 
@@ -791,19 +803,7 @@ ul.footer__social {
 }
 
 /* media */
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1199px) {
-
-
 
   .header__top {
     padding: 0px 10px;
@@ -831,12 +831,20 @@ ul.footer__social {
     transform: translateY(-200%);
     transition: all 0.5s;
     z-index: 1;
-  }
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+}
 
   .menu__list.menu__list--active {
     transform: translateY(0);
     overflow-y: scroll;
-  }
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
 
   .menu__item+.menu__item {
     margin-left: 0;
